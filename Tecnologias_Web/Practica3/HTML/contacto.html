@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/contacto.css">
+</head>
+
+<body>
+    <header>
+        <h1>DISEÑO WEB</h1>
+
+        <form class="buscador" action="https://www.google.com/search" method="get"
+            style="height: fit-content; width: fit-content;">
+            <input type="search" name="q" placeholder="Buscar...." />
+            <span class="lupa">
+                <img src="../IMG/lupa.png" alt="lupa">
+            </span>
+        </form>
+    </header>
+
+    <div class="menu">
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="index.html" class="enlace_nav">Inicio</a>
+                </li>
+                <li>
+                    <a href="podcast.html" class="enlace_nav">Podcast</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="enlace_nav">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="sede_container">
+
+            <div class="sede">
+                <h2>Sede 1</h2>
+                <p>Nuestra sede en Catarroja se encuentra en una ubicación estratégica en Valencia, cerca de servicios locales y con fácil acceso desde las principales carreteras.
+                    <br/>Dirección: Calle Principal, 123, 46470 Catarroja, Valencia</p>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12331.784132736442!2d-0.4140655594069669!3d39.40272697455689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604c281cde90e3%3A0xc07903b4053cd6c!2s46470%20Catarroja%2C%20Valencia!5e0!3m2!1ses!2ses!4v1703274759998!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
+            </div>
+
+            <div class="sede">
+                <h2>Sede 2</h2>
+                <p>La sede de Getafe está ubicada en la próspera comunidad de Madrid, con instalaciones modernas y un ambiente propicio para la innovación.<br/>Dirección: Avenida Central, 456, 28901 Getafe, Madrid</p>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48682.91613303033!2d-3.7756874031717813!3d40.30501346957247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42209a1ebb8201%3A0x20c3fa90b7e442fc!2sGetafe%2C%20Madrid!5e0!3m2!1ses!2ses!4v1703274701172!5m2!1ses!2ses"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="sede">
+                <h2>Sede 3</h2>
+                <p>Nuestra sede en Sevilla refleja la energía vibrante de Andalucía. Situada en una de las plazas más emblemáticas, ofrecemos un entorno inspirador para colaborar y prosperar.<br/>
+                    Dirección: Plaza del Comercio, 789, 41001 Sevilla, Andalucía</p>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101459.4192749844!2d-6.037631908482217!3d37.37547846899734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1114be6291%3A0x34f018621cfe5648!2sSevilla!5e0!3m2!1ses!2ses!4v1703274343503!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="sede">
+                <h2>Sede 4</h2>
+                <p>La sede cerca de la Plaza de la Glorieta en Elche ofrece un ambiente único en la costa mediterránea. Rodeada de naturaleza, es el lugar perfecto para trabajar con pasión y creatividad.<br/>Dirección: 012 Calle Cuaternaria, Ciudad D</p>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6810.443716503093!2d-0.6913444664407631!3d38.26468075586808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b6f335ed50cf%3A0x4c5d85deb8c3b938!2sPlaza%20de%20la%20Glorieta!5e0!3m2!1ses!2ses!4v1703274807463!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
+            </div>
+        </section>
+        <section class="form_container">
+            <form action="mailto:andres.perez05@goumh.umh.es" method="post" enctype="text/plain" style="height: fit-content;">
+                <div class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+                    <label for="apellido1">Apellido 1:</label>
+                    <input type="text" id="apellido1" name="apellido1" placeholder="Primer apellido" required>
+
+                    <label for="apellido2">Apellido 2:</label>
+                    <input type="text" id="apellido2" name="apellido2" placeholder="Segundo apellido">
+
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Mensaje" required>
+
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="mail" placeholder="Correo electronico" required>
+
+                    <label for="fechaNacimiento" style="margin-top: 0;">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+
+                    <label for="ficheros">Ficheros adjuntos:</label>
+                    <input type="file" id="ficheros" name="ficheros">
+
+                    <label for="Ntelf">Numero de telefono: </label>
+                    <input type="tel" id="Ntelf" name="Ntelf" placeholder="796454254">
+
+                    <label for="tipo_consulta">Tipo de consulta:</label>
+                    <select id="tipo_consulta" name="tipo_consulta">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+                <button class="btnEnv" type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <div class="creator">
+            <p>Esta web fue diseñada por:</p>
+            <ul>
+                <li>Andres Perez Leonis</li>
+                <li>Bryan Grisales Vasco</li>
+            </ul>
+        </div>
+        <div class="podcast_associated">
+            <p>Podcast relacionados:</p>
+            <ul>
+                <li><a href="">Enlace</a></li>
+                <li><a href="">Enlace</a></li>
+                <li><a href="">Enlace</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!--
+    <section class="form_container">
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido1">Apellido 1:</label>
+            <input type="text" id="apellido1" name="apellido1" required>
+
+            <label for="apellido2">Apellido 2:</label>
+            <input type="text" id="apellido2" name="apellido2">
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <div class="form-row">
+                <div>
+                    <label for="campo1">Campo Adicional 1:</label>
+                    <input type="text" id="campo1" name="campo1" required>
+                </div>
+                <div>
+                    <label for="campo2">Campo Adicional 2:</label>
+                    <input type="number" id="campo2" name="campo2" required>
+                </div>
+            </div>
+
+            <label for="campo3">Campo Adicional 3:</label>
+            <select id="campo3" name="campo3" required>
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+     <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div>
+                    <label for="apellido1">Apellido 1:</label>
+                    <input type="text" id="apellido1" name="apellido1" placeholder="Primer apellido" required>
+                </div>
+                <div>
+                    <label for="apellido2">Apellido 2:</label>
+                    <input type="text" id="apellido2" name="apellido2" placeholder="Segundo apellido">
+                </div>
+
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Mensaje" required>
+                </div>
+                <div>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="mail" placeholder="Correo electronico" required>
+                </div>
+                <div>
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>
+
+                <div>
+                    <label for="campo1">Campo Adicional 1:</label>
+                    <input type="text" id="campo1" name="campo1">
+                </div>
+                <div>
+                    <label for="Ntelf">Numero de telefono: </label>
+                    <input type="tel" id="Ntelf" name="Ntelf" placeholder="796454254">
+                </div>
+                <div>
+                    <label for="tipo_consulta">Tipo de consulta:</label>
+                    <select id="tipo_consulta" name="tipo_consulta">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+
+
+-->
