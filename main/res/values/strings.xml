@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">mispelis48642578Q</string>
+    <string name="TxtCorrero">Correo Electronico (Obligatorio)</string>
+    <string name="TxtContrasena">Contraseña (Obligatorio)</string>
+    <string name="TxtIniciarSesion">Iniciar Sesion</string>
+    <string name="TxtCorreoDescripcion">Escribe tu correo electronico</string>
+    <string name="TxtPasswordDescripcion">Escribe tu password</string>
+    <string name="TxtSinCuenta">¿Necesitas una cuenta?</string>
+    <string name="TxtVolverIniciarSesion">¿Ya tienes una cuenta?</string>
+    <string name="TxtCrearCuenta">Crear Cuenta</string>
+    <string name="TxtSiguiente">Siguiente</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="SinCorreo">No has introducido el Correo Electronico</string>
+    <string name="SinPassword">No has introducido la contraseña</string>
+    <string name="SinDatos">Debes rellenar todos los apartados</string>
+    <string name="Nombre">Nombre (Obligatorio)</string>
+    <string name="Apellidos">Apellidos</string>
+    <string name="BoxTxtNombre">Escribe tu nombre</string>
+    <string name="BoxTxtApellidos">Escribe tu(s) apellido(s)</string>
+    <string name="TxtNacimiento">Fecha de Nacimiento</string>
+    <string name="BoxTxtNacimiento">Escribe tu fecha de nacimiento</string>
+    <string name="TxtPreguntaSeguridad">Escoge una pregunta de seguridad:</string>
+    <string name="DescripcionPreguntasSeguridad">Preguntas de Seguridad</string>
+    <string-array name="ListaPreguntas">
+        <item>Ninguna</item>
+        <item>¿Animal favorito?</item>
+        <item>¿Ciudad favorita?</item>
+        <item>¿Cuál es el nombre de tu mejor amigo?</item>
+    </string-array>
+    <string name="BoxTxtPreguntas">Escribe tu respuesta</string>
+    <string name="PreguntaIntereses">Escoge alguno de estos intereses:</string>
+    <string name="Tecnologia">Tecnología</string>
+    <string name="Deportes">Deportes</string>
+    <string name="RedesSociales">Redes Sociales</string>
+    <string name="Cine">Cine</string>
+    <string name="Otros">Otros</string>
+    <string name="BoxTxtIntereses">Escribe cual es tu interes</string>
+    <string name="FactorAutentificacion">¿Quieres usar un segundo factor de autentificación?</string>
+    <string name="FaltanDatos">Faltan datos por introducir</string>
+    <string name="FaltaRespuesta">La pregunta de seguridad es obligatoria</string>
+    <string name="FaltaInteres">Si marcas el interes de Otros debes introducirlo</string>
+
+</resources>

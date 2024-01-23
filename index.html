@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="JQuery_Mobile/jquery.mobile.theme-1.4.5.min.css">
+        <link rel="stylesheet" href="JQuery_Mobile/jquery.mobile.structure-1.4.5.min.css">
+        <link rel="stylesheet" href="JQuery_Mobile/jquery.mobile.icons-1.4.5.min.css">
+        <link rel="stylesheet" href="JQuery_Mobile/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="JQuery_Mobile/jquery.mobile.external-png-1.4.5.min.css">
+        <link rel="stylesheet" href="JQuery_Mobile/jquery.mobile.inline-svg-1.4.5.min.css">
+        <link rel="stylesheet" href="JQuery_Mobile/jquery.mobile.inline-png-1.4.5.min.css">
+        
+        <script src="JQuery_Mobile/jquery-1.11.1.min.js"></script>
+        <script src="JQuery_Mobile/jquery.mobile-1.4.5.min.js"></script>
+
+        <title>Práctica 2 DADM Cordova</title>
+    </head>
+    <body>
+        <div class="container">
+            <img src="img/Logo.png" alt="Logo" class="Logo">
+        </div>
+        <div class="container">
+            <from id="Formulario">
+                <div class="Partes">
+                    <label for="email" class="Textos">Email:</label>
+                    <input class="inputs" type="email" id="email" placeholder="Introduce un Email">
+                </div>
+                <div class="Partes">
+                    <label for="Contra" class="Textos">Contraseña:</label>
+                    <input class="inputs" type="password" id="Contra" placeholder="Introduce un password">
+                </div>
+            </from>
+        </div>
+
+        <div class="terminos">
+            <h2>Términos de Uso</h2>
+            <div class="scrollview">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales enim a pellentesque facilisis. Phasellus nec elementum nunc, in tempus nunc. Mauris nec enim imperdiet, blandit nisl eu, molestie diam. Sed nunc diam, aliquet sit amet dictum sit amet, condimentum vel est. Nullam elit risus, vulputate ut dictum sed, gravida et turpis. Mauris consequat porttitor porttitor. Nunc scelerisque maximus efficitur. Vivamus eget sodales dui. Nunc egestas, urna ut dictum ultrices, urna libero semper nulla, vitae eleifend mauris lacus eget orci. Sed a consequat nisl. Fusce nibh massa, ultricies quis ornare et, porta congue sapien. Morbi turpis nisi, tempus ac tempus et, consectetur eget tortor. Aliquam ut ipsum ante. Pellentesque sed neque sit amet ex molestie faucibus. Cras congue augue non turpis gravida ultrices. Praesent dictum augue nisl. Praesent eget pellentesque metus. Vestibulum commodo sem varius urna sollicitudin, in semper orci sodales.</p>
+            
+
+
+               <fieldset>
+                    <div data-role="fieldcotain">
+                        <label for="checkbox-based-flipswitch">Acepto los términos:</label>
+                        <input type="checkbox" id="checkbox-based-flipswitch" data-role="flipswitch">
+                    </div>
+                </fieldset>
+
+
+            </div>
+        </div>
+
+        <div class="btnContenedor">
+            <button id="btnCrearCuenta" disabled>Crear Cuenta</button>
+        </div>
+
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

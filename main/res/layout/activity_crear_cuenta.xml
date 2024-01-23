@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearCuenta">
+
+    <ImageView
+        android:id="@+id/imagenInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/LayoutFormulario"
+        style="@style/LayoutFormulario2"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TxtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/Nombre"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/BoxTxtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/BoxTxtNombre"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/TxtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/TxtCorrero"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/BoxTxtCorreoCrear"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/TxtCorreoDescripcion"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/TxtContra"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/TxtContrasena"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/BoxTxtContraCrear"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/TxtPasswordDescripcion"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/TxtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/Apellidos"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/BoxTxtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/BoxTxtApellidos"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutFormulario2"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TxtNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/TxtNacimiento"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/BoxTxtNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="@string/BoxTxtNacimiento"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/TxtPreguntas"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/TxtPreguntaSeguridad"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/SeleccionPreguntas"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:contentDescription="@string/DescripcionPreguntasSeguridad"
+            android:labelFor="@id/TxtPreguntas" />
+
+        <EditText
+            android:id="@+id/BoxTxtRespuesta"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/BoxTxtPreguntas"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutFormulario3"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TxtIntereses"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/PreguntaIntereses"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/CheckTecno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Tecnologia" />
+
+        <CheckBox
+            android:id="@+id/CheckDeportes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Deportes" />
+
+        <CheckBox
+            android:id="@+id/CheckRedes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RedesSociales" />
+
+        <CheckBox
+            android:id="@+id/CheckCine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Cine" />
+
+        <CheckBox
+            android:id="@+id/CheckOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Otros" />
+
+        <EditText
+            android:id="@+id/BoxTxtOtros"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/BoxTxtIntereses"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BtnSiguiente"
+        android:layout_width="210dp"
+        android:layout_height="75dp"
+        android:text="@string/TxtSiguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <Button
+        android:id="@+id/BtCrearCuenta"
+        android:layout_width="210dp"
+        android:layout_height="75dp"
+        android:text="@string/TxtCrearCuenta"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <Button
+        android:id="@+id/BtnCancelar"
+        android:layout_width="145dp"
+        android:layout_height="66dp"
+        android:text="@string/Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
