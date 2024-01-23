@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LayoutFormulario2">
+        <item name="android:layout_width">287dp</item>
+        <item name="android:layout_height">421dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+</resources>

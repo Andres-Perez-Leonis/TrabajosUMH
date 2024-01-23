@@ -1,0 +1,18 @@
+<!ELEMENT podcast (cabecera, fecha?, cuerpo+, redes_sociales*) >
+<!ELEMENT cabecera (#PCDATA) >
+<!ELEMENT cuerpo (imagen*, parrafo+, enlace*) >
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen src CDATA #REQUIRED>
+<!ELEMENT enlace (texto+, direccion) >
+<!ELEMENT direccion (#PCDATA) >
+<!ELEMENT texto (#PCDATA) >
+<!ELEMENT parrafo (texto+, fecha*, presentador*, tecnico*) >
+<!ELEMENT tecnico (#PCDATA) >
+<!ELEMENT presentador (#PCDATA) >
+<!ELEMENT fecha EMPTY>
+<!ATTLIST fecha dd CDATA #REQUIRED >
+<!ATTLIST fecha mm CDATA #REQUIRED > 
+<!ATTLIST fecha aaaa CDATA #IMPLIED >
+<!ELEMENT redes_sociales (#PCDATA)>
+<!ATTLIST redes_sociales nombre CDATA #REQUIRED dir CDATA #REQUIRED>
+    

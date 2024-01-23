@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seguridad_social xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="P1_3_1_schema.xsd">
+
+    <afiliado dni="1ceaf" nombre="Pedro" situacion="en_paro" fechaNacimiento="1990-12-04">
+        <listado_bajas>
+            <baja fechaInicio="2002-05-03" causa="Pierna Rota"/>
+        </listado_bajas>
+        <prestaciones_cobradas>
+        </prestaciones_cobradas>
+    </afiliado>
+
+    <afiliado dni="1ceaf" nombre="Maria" situacion="en_paro" fechaNacimiento="1985-04-04">
+        <listado_bajas></listado_bajas>
+        <prestaciones_cobradas>
+            <prestacion fechaInicio="2006-09-17" fechaFinal="2006-10-26" cantidad="1000"/>
+        </prestaciones_cobradas>
+    </afiliado>
+
+    <afiliado dni="1ceaf" nombre="Antonio" situacion="en_paro" fechaNacimiento="1998-07-25">
+        <listado_bajas></listado_bajas>
+        <prestaciones_cobradas></prestaciones_cobradas>
+    </afiliado>
+</seguridad_social>

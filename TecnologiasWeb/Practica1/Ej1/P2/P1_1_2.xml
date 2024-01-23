@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE novedades SYSTEM "P_1_2.dtd">
+
+<novedades>
+    <podcast>
+        <imagen src=""></imagen>
+        <titulo>Fuera de Series: Semana del 9 al 15 de Octubre de 2023, 6 de octubre de 2023</titulo>
+        <responsable>FUERA DE SERIES</responsable>
+    </podcast>
+    
+    <podcast>
+        <imagen src=""></imagen>
+        <titulo>La Universidad Miguel Hernández pone en marcha las actividades de Bienvenida...</titulo>
+        <responsable>INFORMATIVOS UMH</responsable>
+    </podcast>
+    
+    <podcast>
+        <imagen src=""></imagen>
+        <titulo>El estreno de la actualidad deportiva, en “The post radio”, 6 de octubre...</titulo>
+        <responsable>THE POST RADIO</responsable>
+    </podcast>
+    
+    <podcast>
+        <imagen src=""></imagen>
+        <titulo>UMH Sapiens nos descubre todo sobre las investigaciones del ingeniero Agroalimentario...</titulo>
+        <responsable>INFORMATIVOS UMH</responsable>
+    </podcast>
+
+</novedades>
+   

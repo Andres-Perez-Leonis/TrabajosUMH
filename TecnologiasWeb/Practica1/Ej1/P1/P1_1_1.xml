@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE podcast SYSTEM "P1_1_1.dtd">
+
+<podcast>
+    <cabecera>
+        La Universidad Miguel Hernández celebra el Día Mundial del Corazón con la iniciativa UMH
+        Cardioprotegida,
+        en «Informativos UMH»
+    </cabecera>
+    <fecha dd="23" mm="septiembre" aaaa="2023"></fecha>
+    <cuerpo>
+
+        <imagen src=""></imagen>
+        <parrafo>
+            <texto>
+                En el informativo de hoy es noticia:
+                Hablamos con el profesor de la UMH, Fernando Borrás Rocher,
+                sobre la iniciativa UMH Cardioprotegida a propósito de la celebración hoy,
+            </texto>
+            <fecha dd="29" mm="septiembre"></fecha>
+        </parrafo>
+
+        <parrafo>
+            <texto>
+                Radio UMH estrena la temporada 2023/2024.
+            </texto>
+        </parrafo>
+
+        <parrafo>
+            <texto>
+                ¿Alguna vez te has preguntado cuántos años puede tener el cráneo fósil
+                más antiguo que se conoce?
+                Hoy en la sección 'ciencia en un minuto' nuestro compañero Israel Martínez
+                nos descubre el trabajo de los paleontólogos que descubrieron el cráneo conocido
+                como 'Miguelón'.
+            </texto>  
+            <fecha dd="29" mm="septiembre" ></fecha>
+        </parrafo>
+
+
+        <parrafo>
+            <texto>
+                Arranca la nueva
+                programación de VIDA UMH.
+            </texto>
+        </parrafo>
+
+        <parrafo>
+            <texto>
+                Este programa de noticias está presentado por
+            </texto>
+            <presentador>Ana María Arronis</presentador>
+            <tecnico>Borja Cabrera</tecnico>
+        </parrafo>
+
+
+    </cuerpo>
+
+    
+
+    <redes_sociales nombre="facebook" dir="https://www.facebook.com"></redes_sociales>
+    <redes_sociales nombre="Linkedin" dir="https://www.linkedin.com"></redes_sociales>
+    <redes_sociales nombre="twitter" dir="https://www.twitter.com"></redes_sociales>
+
+</podcast>
+
+<!-- 
+    
+        <enlace>
+            <texto>
+                INFORMATIVOS UMH
+            </texto>
+            <direccion>
+                https://radio.umh.es/category/programas-radio-umh-2012-2013/extension/informativos-umh/
+            </direccion>
+        </enlace>
+
+
+        
+            <fecha dd="29" mm="septiembre" ></fecha>
+            <presentador>Ana María Arronis</presentador>
+            <tecnico>Borja Cabrera</tecnico>
+-->

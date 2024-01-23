@@ -1,0 +1,6 @@
+<!ELEMENT novedades (podcast+)>
+<!ELEMENT podcast (imagen, titulo, responsable)>
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen src CDATA #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT responsable (#PCDATA)>

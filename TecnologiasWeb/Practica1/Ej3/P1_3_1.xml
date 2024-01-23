@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lista SYSTEM "P1_3_1.dtd">
+
+<lista>
+    <afiliado dni_nie="ceaf" nombre="Pedro" situacion="en_paro">
+        <fecha_nacimiento dd="16" mm="02" aaaa="1990"></fecha_nacimiento>
+        <listado_bajas>
+            <baja>
+                <fecha_inicio dd="03" mm="05" aaaa="2002"/>
+                <causa>Pierna rota</causa>
+            </baja>
+        </listado_bajas>
+        <prestaciones_cobradas></prestaciones_cobradas>
+    </afiliado>
+
+    <afiliado dni_nie="ldo" nombre="Maria" situacion="en_paro">
+        <fecha_nacimiento dd="04" mm="04" aaaa="1985"></fecha_nacimiento>
+        <listado_bajas></listado_bajas>
+        <prestaciones_cobradas>
+            <prestacion>
+                <fecha_inicio dd="17" mm="09" aaaa="2006"/>
+                <fecha_fin dd="26" mm="10" aaaa="2006"/>
+                <cantidad>1000</cantidad>
+            </prestacion>
+        </prestaciones_cobradas>
+    </afiliado>
+
+    <afiliado dni_nie="rifw3" nombre="Antonio" situacion="en_paro">
+        <fecha_nacimiento dd="25" mm="07" aaaa="1998"></fecha_nacimiento>
+        <listado_bajas></listado_bajas>
+        <prestaciones_cobradas></prestaciones_cobradas>
+    </afiliado>
+
+</lista>

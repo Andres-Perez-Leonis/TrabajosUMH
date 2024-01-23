@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="seguridad_social" type="tipoSeguridad_Social" />
+
+    <xsd:complexType name="tipoSeguridad_Social">
+        <xsd:sequence>
+            <xsd:element name="afiliado" type="tipoAfiliado" minOccurs="3" maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoAfiliado">
+        <xsd:sequence>
+            <xsd:element name="listado_bajas" type="tipo_listado_bajas" maxOccurs="1"></xsd:element>
+            <xsd:element name="prestaciones_cobradas" type="tipo_prestaciones_cobradas" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="causa" type="xsd:string"/>
+        <xsd:attribute name="dni" type="xsd:string" use="required"/>
+        <xsd:attribute name="fechaNacimiento" type="xsd:date" use="required"/>
+        <xsd:attribute name="nombre" type="xsd:string" use="required"/>
+        <xsd:attribute name="apellidos" type="xsd:string"  use="optional"/>
+        <xsd:attribute name="situacion" type="tipoSituacion" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipo_listado_bajas">
+        <xsd:sequence>
+            <xsd:element name="baja" type="tipo_baja" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipo_baja">
+        <xsd:attribute name="fechaInicio" type="xsd:date" use="required"/>
+        <xsd:attribute name="fechaFinal" type="xsd:date" use="optional"/>
+        <xsd:attribute name="causa" type="xsd:string" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipo_prestaciones_cobradas">
+        <xsd:sequence>
+            <xsd:element name="prestacion" type="tipo_prestacion" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipo_prestacion">
+        <xsd:attribute name="fechaInicio" type="xsd:date" use="required"/>
+        <xsd:attribute name="fechaFinal" type="xsd:date" use="required"/>
+        <xsd:attribute name="cantidad" type="xsd:decimal" use="required"/>
+    </xsd:complexType>
+
+
+
+    <xsd:simpleType name="tipoSituacion">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="en_paro"></xsd:enumeration>
+            <xsd:enumeration value="en_activo"></xsd:enumeration>
+            <xsd:enumeration value="jubilado"></xsd:enumeration>
+            <xsd:enumeration value="edad_no_laboral"></xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>
