@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<eventos_2023>
+    <programa id="1" creador="Ibai" presupuesto="20.000">
+        <titulo>Disaster Chefs</titulo>
+        <participantes>
+            <equipo id="1" experiencia="amateur">
+                <tag_name>IbaiSoloQ</tag_name>
+                <integrante_amt id="1" edad="35">Ibai Llanos</integrante_amt>
+                <integrante_amt id="2" edad="30">BarbeQ</integrante_amt>
+            </equipo>
+            <equipo id="2" experiencia="amateur">
+                <tag_name>CandC</tag_name>
+                <integrante_amt id="1">Carola</integrante_amt>
+                <integrante_amt id="2" edad="31">Cristinini</integrante_amt>
+            </equipo>
+            <equipo id="3" experiencia="profesional">
+                <tag_name>LaMalagueta</tag_name>
+                <integrante_prof id="1" edad="17" titulos="0">Illo Juan</integrante_prof>
+                <integrante_prof id="2" titulos="1">Er Bokeron</integrante_prof>
+            </equipo>
+            <equipo id="4" experiencia="profesional">
+                <tag_name>BadPatos</tag_name>
+                <integrante_prof id="1" edad="33" titulos="5">El Xokas</integrante_prof>
+                <integrante_prof id="2" edad="54" titulos="12">Knecro</integrante_prof>
+            </equipo>
+        </participantes>
+        <jurado>
+            <miembro id="1">Mr.Jagger</miembro>
+            <miembro id="2">Reven</miembro>
+            <miembro id="3">Gerard Pique</miembro>
+            <miembro id="4">David Broncano</miembro>
+        </jurado>
+    </programa>
+    <programa id="2" creador="Ibai" presupuesto="55.000"></programa>
+</eventos_2023>

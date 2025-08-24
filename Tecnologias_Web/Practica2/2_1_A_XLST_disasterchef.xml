@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">    
+    <xsl:template match="/">
+        <xsl:apply-templates/>
+    </xsl:template>
+
+    <xsl:template match="eventos_2023">
+        <xsl:apply-templates select="programa"></xsl:apply-templates>
+    </xsl:template>
+
+    <xsl:template match="programa">
+        <xsl:apply-templates select="participantes"></xsl:apply-templates>
+    </xsl:template>
+
+    <xsl:template match="participantes">
+        <xsl:apply-templates select="equipo"></xsl:apply-templates>
+    </xsl:template>
+
+    <xsl:template match="equipo">
+        <table border="1">
+            <tr >
+                <th><xsl:value-of select="tag_name"></xsl:value-of></th>
+            </tr>
+            <xsl:for-each select="integrante_prof">
+                <tr>
+                    <td>
+                        <xsl:value-of select="."></xsl:value-of>
+                    </td>
+                </tr>
+            </xsl:for-each>
+            
+            <tr><td><input type="checkbox"></input></td></tr>
+        </table>
+        <br></br>
+    </xsl:template>
+
+    <xsl:template match="jurado"></xsl:template>
+
+</xsl:stylesheet>
+
+<!--
+    
+        <table>
+            <tr>
+                <td><xsl:value-of select="tag-name"></xsl:value-of></td>
+            </tr>
+            <tr>
+                <xsl:for-each select="integrante_prof"></xsl:for-each>
+            </tr>
+        </table>
+-->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">    
+    <xsl:template match="/">
+        <xsl:apply-templates select="rss/channel/item">
+            <xsl:sort select="title" order="ascending"></xsl:sort>
+        </xsl:apply-templates>
+    </xsl:template>
+
+    <xsl:template match="rss">
+        <xsl:apply-templates select="channel"></xsl:apply-templates>
+    </xsl:template>
+
+    <xsl:template match="channel">
+        <xsl:apply-templates select="item" mode="ordernar"></xsl:apply-templates>
+    </xsl:template>
+
+
+    <xsl:template match="item">
+            <table border="1">
+                <tr >
+                    <th>Titulo: </th>
+                    <th><xsl:value-of select="title"></xsl:value-of></th>
+                </tr>
+                <tr >
+                    <th>Fecha de publicación: </th>
+                    <th><xsl:value-of select="pubDate"></xsl:value-of></th>
+                </tr>
+                <tr >
+                    <th>Enlace Web: </th>
+                    <th><xsl:value-of select="link"></xsl:value-of></th>
+                </tr>
+                <tr >
+                    <th>Enlace fichero: </th>
+                    <th><xsl:value-of select="guid"></xsl:value-of></th>
+                </tr>
+                <tr >
+                    <th>Duracion: </th>
+                    <th><xsl:value-of select="itunes:duration"></xsl:value-of></th>
+                </tr>
+            </table>
+            <br></br>
+    </xsl:template>
+</xsl:stylesheet>

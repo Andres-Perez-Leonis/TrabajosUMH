@@ -1,0 +1,33 @@
+<!ELEMENT lista (afiliado*)>
+<!ELEMENT afiliado (fecha_nacimiento, listado_bajas, prestaciones_cobradas)>
+<!ATTLIST afiliado 
+    dni_nie ID #REQUIRED 
+    nombre CDATA #REQUIRED 
+    apellidos CDATA #IMPLIED
+    situacion (en_paro|en_activo|jubilado|edad_no_laboral) #REQUIRED>
+
+
+
+<!ELEMENT listado_bajas (baja*)>
+<!ELEMENT baja (fecha_inicio, fecha_fin?, causa)>
+<!ELEMENT causa (#PCDATA)>
+
+<!ELEMENT prestaciones_cobradas (prestacion*)>
+<!ELEMENT prestacion (fecha_inicio, fecha_fin, cantidad)>
+<!ELEMENT cantidad (#PCDATA)>
+
+
+<!ELEMENT fecha_nacimiento EMPTY>
+<!ATTLIST fecha_nacimiento dd CDATA #REQUIRED >
+<!ATTLIST fecha_nacimiento mm CDATA #REQUIRED > 
+<!ATTLIST fecha_nacimiento aaaa CDATA #REQUIRED >
+
+<!ELEMENT fecha_inicio EMPTY>
+<!ATTLIST fecha_inicio dd CDATA #REQUIRED >
+<!ATTLIST fecha_inicio mm CDATA #REQUIRED > 
+<!ATTLIST fecha_inicio aaaa CDATA #REQUIRED >
+
+<!ELEMENT fecha_fin EMPTY >
+<!ATTLIST fecha_fin dd CDATA #REQUIRED >
+<!ATTLIST fecha_fin mm CDATA #REQUIRED > 
+<!ATTLIST fecha_fin aaaa CDATA #REQUIRED >

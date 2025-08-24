@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../CSS/productos.css">
+    <script src="../JS/productos.js"></script>
+</head>
+<body onload="mostrar()">
+    <main>
+        <div id="Seleccion">
+            <table>
+               <tr>
+                    <th>Cantidad</th>
+                    <th>Productos</th>
+                    <th >IVA</th>
+                    <th colspan="3">Carrito</th>
+               </tr>
+               <tr>
+                    <td><input type="number" id="cantidadProducto" value="1"/></td>
+                    <td>
+                        <select id="productos">
+                            <option value="300">Clase de TW</option>
+                            <option value="500">Clase de CP</option>
+                            <option value="200">Clase de ATW</option>
+                            <option value="300">Clase de BBDD</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="iva" onchange="recalcularCarrito()">
+                            <option value="1.21">IVA 21%</option>
+                            <option value="1.08">IVA 8%</option>
+                            <option value="1.12">IVA 12%</option>
+                            <option value="1.15">IVA 15%</option>
+                        </select>
+                    </td>
+                    <td><button onclick="crearProductos()">Añadir</button></td>
+                    <td><button onclick="guardar()">Guardar carrito</button></td>
+                    <td><button onclick="borrar()">Borrar carrito</button></td>
+               </tr> 
+            </table>
+        </div>
+
+        <div>
+            <table id="tabla-productos">
+                <tr>
+                    <th>Cantidad</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Subtotal</th>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <p id="total">Total: </p>
+        </div>
+    </main>
+</body>
+</html>

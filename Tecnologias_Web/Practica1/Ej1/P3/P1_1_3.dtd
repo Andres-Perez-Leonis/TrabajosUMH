@@ -1,0 +1,16 @@
+<!ELEMENT podcast (imagen, titulo, fecha, categoria, audio, descripcion)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT audio (#PCDATA)>
+<!ATTLIST audio src CDATA #REQUIRED>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen src CDATA #REQUIRED>
+<!ELEMENT texto (#PCDATA)>
+<!ELEMENT parrafo (#PCDATA)>
+<!ELEMENT descripcion (texto, enlace)>
+<!ELEMENT enlace (texto, direccion)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT fecha EMPTY>
+<!ATTLIST fecha dd CDATA #REQUIRED >
+<!ATTLIST fecha mm CDATA #REQUIRED > 
+<!ATTLIST fecha aaaa CDATA #IMPLIED >

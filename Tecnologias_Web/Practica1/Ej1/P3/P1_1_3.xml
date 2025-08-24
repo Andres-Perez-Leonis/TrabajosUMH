@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE podcast SYSTEM "P1_1_3.dtd">
+
+<podcast>
+    <imagen src=""></imagen>
+    <titulo>
+    </titulo>
+    <fecha dd="" mm="" aaaa=""></fecha>
+    <categoria>Mundo y Sociedad</categoria>
+    <audio src="">Reproducir</audio>
+    <descripcion>
+        <texto>
+        </texto>
+        <enlace>
+            <texto></texto>
+            <direccion></direccion>
+        </enlace>
+    </descripcion>
+</podcast>
+
+<!--Aqui tenemos que explicar que añadiriamos al dtd y como (en la memoria)-->

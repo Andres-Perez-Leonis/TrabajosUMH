@@ -1,0 +1,77 @@
+
+/* Path: www\css\index.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Formulario
+{
+    width: 50%;
+    min-width: 300px;
+}
+
+.scrollview {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+
+
+.Textos {
+    width: min-content;
+    height: min-content;
+}
+
+.Partes {
+    display: block;
+}
+
+.container {
+    display: flex;
+}
+
+.inputs {
+    width: min-content;
+    height: min-content;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.terminos {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border: 1px;
+    border-radius: 10px;
+}
+
+#btnCrearCuenta {
+    width: 150px;
+    height: min-content;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btnContenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.container img {
+   max-width: 100px;
+   max-height: 100px;
+}
